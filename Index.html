@@ -4,9 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EVU candles magazine</title>
+    <link rel="icon" href="Image/jar.png">
+    <link rel="Stylesheet" href="CSS/Style.css">
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Inter&family=Julius+Sans+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <span class="logo">EVU Candles</span>
+        <nav>
+            <ul>
+                <li>Menu</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <form>
+                <p>Фильтры</p>
+                <fieldset>
+                    <legend>Размер свечи</legend>
+                    <label>
+                        <input type="radio" name="candle-size" value="big">
+                        Большая
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="candle-size" value="small">
+                        Маленькая
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Ароматы</legend>
+                    <label>
+                        <input type="checkbox" name="aroma-change" value="lavander">
+                        Лаванда & ваниль
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="aroma-change" value="Nuts">
+                        Nuts
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="aroma-change" value="exotic fireworks">
+                        Экзотический фейерверк
+                    </label>
+                    <label>
+                    <br>
+                        <input type="checkbox" name="aroma-change" value="aroma cappuccino">
+                        Ароматный капучино
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="aroma-change" value="blueberries with cream">
+                        Черника со сливками
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="aroma-change" value="mown grass">
+                        Скошенная трава
+                    </label>
+                </fieldset>
+                <button class="button-filter">Применить фильтры</button>
+            </form>
+        </aside>
+        <section>
+            <div class="item-card">
+                <img class="item-image" href="https://2.downloader.disk.yandex.ru/preview/7e0bcc27cf0f6b96b4ef5162d3b690b9a20c68ebcb76fa443c6882df7a98ee76/inf/k2v7kfpgFyDeyyFoA-5oeDxr46AyZ3U1R6EGuUwNsS_lI91ZXXzs8cjXTKkfc-ZlEl_Gyllg8Dm56yqaEDTurA%3D%3D?uid=267570332&filename=biglavender.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=267570332&tknv=v2&size=1903x964" alt="mown grass pic">
+                <p class="item-name">Ароматическая свеча "Скошенная трава"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="blueberries with cream pic">
+                <p class="item-name">Ароматическая свеча "Черника со сливками"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="aroma cappuccino pic">
+                <p class="item-name">Ароматическая свеча "Ароматный капучино"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="exotic fireworks pic">
+                <p class="item-name">Ароматическая свеча "Экзотический фейерверк"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="Nuts candle pic">
+                <p class="item-name">Ароматическая свеча "Nuts"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="biglavender.jpg" alt="Lavander & vanila pic">
+                <p class="item-name">Ароматическая свеча "Лаванда и ваниль"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
     
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="mown grass pic">
+                <p class="item-name">Ароматическая свеча "Скошенная трава"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+                
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="blueberries with cream pic">
+                <p class="item-name">Ароматическая свеча "Черника со сливками"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+                
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="aroma cappuccino pic">
+                <p class="item-name">Ароматическая свеча "Ароматный капучино"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="exotic fireworks pic">
+                <p class="item-name">Ароматическая свеча "Экзотический фейерверк"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+            <div class="item-card">
+                <img class="item-image"
+                src="https://cdn.lmbd.ru/09847266-eb36-4dc9-9c70-3662a291ce28/"
+                alt="Grapefruit slice atop a pile of other slices">
+                <p class="item-name">Ароматическая свеча "Лаванда и ваниль"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+    
+            <div class="item-card">
+                <img class="item-image" href="Image/biglavender.JPG" alt="mown grass pic">
+                <p class="item-name">Ароматическая свеча "Скошенная трава"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+                
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="blueberries with cream pic">
+                <p class="item-name">Ароматическая свеча "Черника со сливками"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+                
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="aroma cappuccino pic">
+                <p class="item-name">Ароматическая свеча "Ароматный капучино"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+
+            <div class="item-card">
+                <img class="item-image" href="Image/Big-grass.png" alt="exotic fireworks pic">
+                <p class="item-name">Ароматическая свеча "Экзотический фейерверк"</p>
+                <p class="item-price">1 800 руб.</p>
+                <button class="item-button"><a class="item-button-link">Добавить в корзину</a></button>
+            </div>
+        </section>
+<footer></footer>
+    </main>
 </body>
 </html>

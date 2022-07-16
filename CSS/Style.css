@@ -1,0 +1,221 @@
+header {
+  display: flex;
+  box-sizing:border-box;
+  position: fixed;
+  z-index:100;
+  
+  height: 80px;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  background: linear-gradient(90deg, #D4B2EF 0%, rgba(74, 132, 219, 0.58) 53.13%, rgba(217, 217, 217, 0.28) 100%);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  order: 2;
+  
+  width: 146px;
+  height: 80px;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33.18px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+nav {
+  display:flex;
+  position: relative;
+  order: 1;
+}
+
+main {
+  display: flex;
+  
+  height: 100%;
+  
+  margin-top: 80px;
+
+  
+ /* background: yellow;*/
+}
+
+section {
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+ 
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  
+  left: 0;
+  right: 0;
+  
+ /*background: green;*/
+}
+
+.item-card {
+  transition: all 0.1s ease-out;
+  
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  
+  margin: 8px;
+  
+  width: 320px; 
+  height: 384px; 
+  
+  border: 1px solid #C080F3;
+  border-radius: 8px;
+
+ /* background: red;*/
+}
+
+.item-card:hover {
+  transform: scale(1.007);
+}
+
+.item-image {
+  width: 318px;
+  height: 242px;
+  
+  /*border: 1px solid black;*/
+  border-radius: 8px;
+}
+
+.item-name {
+  position: relative;
+  
+  width: 238px;
+  height: 48px;
+
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.33px;
+  line-height: 17px;
+
+  margin: 8px auto 0px;
+  
+  text-align: center;
+  
+  color: #FFC700;
+}
+
+.item-price {
+  position: relative;
+  
+  width: 86px;
+  height: 21px;
+
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.33px;
+  line-height: 17px;
+
+  margin: 0 auto 8px;
+  
+  text-align: center;
+  
+  color: #8C7FDE;
+
+
+}
+
+.item-button {
+  transition: all 0.5s ease-out;
+  
+  position: relative;
+  width: 224px;
+  height: 32px;
+  
+  margin: 0 auto 8px;
+
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.33px;
+  line-height: 17px;
+  
+  color: #FFFFFF;
+  background: linear-gradient(93.62deg, rgba(140, 127, 222, 0.53) 60.04%, rgba(140, 127, 222, 0) 103.73%);
+  border: none;
+  border-radius: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+ aside {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  
+  width: 192px;
+  
+  /*background: pink;*/
+} 
+
+form > p {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid #ae63e4;
+  border-radius: 8px;
+}
+
+.button-filter {
+  transition: all 0.5s ease-out;
+
+  background: linear-gradient(90deg, #D4B2EF 0%, rgba(74, 132, 219, 0.58) 53.13%, rgba(217, 217, 217, 0.28) 100%);
+  color: white;
+  padding: 8px;
+  margin: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+form {
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  box-sizing: border-box;
+  
+  height: 80px;
+   
+  left: 0;
+  right: 0;
+ 
+  background: #3D3D3D;
+}
