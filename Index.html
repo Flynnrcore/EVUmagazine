@@ -14,11 +14,37 @@
 <body>
     <header>
         <span class="logo">EVU Candles</span>
-        <nav class="left-menu">
-            <ul>
-                <li>Menu</li>
+        <div class="left-menu">
+            <button onclick="myFunction()" class="drop-button">
+                <img class="menu-icon" src="Image/Icons/menu-icon.svg" alt="menu icon">
+                Меню
+            </button>
+        <nav id="drop-list" class="dropdown-content">
+                <div><a href="#">Новинки</a></div>
+                <div><a href="#">Каталог</a></div>
+                <div><a href="#">Условия доставки</a></div>
+                <div><a href="#">О нас</a></div>
             </ul>
         </nav>
+        <script>
+            function myFunction() {
+                document.getElementById("drop-list").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.drop-button')) {
+                    let dropdowns = document.getElementsByClassName("dropdown-content");
+
+                    for (let i= 0; i < dropdowns.length; i++) {
+                        let openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
         <nav class="right-menu">
             <ul>
                 <li class="header-search">

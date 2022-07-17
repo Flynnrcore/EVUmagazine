@@ -41,7 +41,81 @@ header {
 .left-menu {
   display:flex;
   position: relative;
+  display: inline-block;
+
+  width: 390px;
+
   order: 1;
+  border: none;
+ /* background: #FFC700;*/
+}
+
+.drop-button {
+  position: relative;
+  background: linear-gradient(180deg, rgba(140, 127, 222, 0.7) 0%, rgba(140, 127, 222, 0.294) 100%);
+
+  color: white;
+  
+  width: 127px;
+  height: 45px;
+
+  left: 29px;
+  top: 20px;
+
+  border:none;
+  border-radius: 10px;
+}
+
+.menu-icon {
+  position: absolute;
+
+  width: 37px;
+  height: 27px;
+
+  top: 9px;
+  left: 9px;
+
+}
+
+.drop-button:hover, .drop-button:focus {
+  background: linear-gradient(93.62deg, rgba(85, 63, 220, 0.53) 60.04%, rgba(86, 62, 232, 0) 103.73%);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  width: 127px;
+  
+  top: 70px;
+  left: 29px;
+
+  text-align: center;
+
+  background-color: #D4B2EF;
+  min-width: 100px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.left-menu a:hover {
+  background-color: #C080F3;
+  border-radius: 10px;
+}
+
+.show {
+  display: block;
 }
 
 .right-menu {
@@ -51,13 +125,18 @@ header {
     flex-direction: row;
 
     width: 390px;
-    padding-right: 3%;
+    /*padding-right: 3%;*/
 
-    right: 0;
     order: 3;
-   /* background-color: #FFC700;*/
+   background-color: #FFC700;
 }
 
+nav ul {
+  
+  height: 32px;
+  border: 1px solid black;
+  padding-left: 0;
+}
 
 .right-menu button {
     border: none;
@@ -70,30 +149,42 @@ header {
 }
 
 .header-search {
-    width: 258px;
-    height: 40px;
+  width: 250px;
+  height: 40px;
+
+    border: 1px solid black;
+
 }
 
 
 .header-search input {
-    position: relative;
+    position: absolute;
     width: 206px;
+    height: 32px;
+
+    margin: 4px 2px;
+    
 
     background: rgba(243, 243, 243, 0.78);
     border: 1px solid silver;
     border-radius: 10px;
+}
 
+.header-search button {
+  position: absolute;
+  left: 206px;
 }
 
 .header-search input:focus {
-    border: ;
+  
 }
 
 .header-basket {
-    display: inline;
-
-    width: 32px;
-    height: 32px;
+  margin: 0;
+  /* width: 32px;*/
+  height: 40px;
+  border: 1px solid black;
+    
 
 }
 
@@ -104,8 +195,9 @@ header {
 
 li {
     display: inline-block;
-  /*  background-color: #ae63e4;*/
-}
+    background-color: #ae63e4;
+    margin: 0;
+} 
 
 main {
   display: flex;
@@ -151,7 +243,6 @@ section {
   border: 1px solid #C080F3;
   border-radius: 8px;
 
- /* background: red;*/
 }
 
 .item-card:hover {
@@ -164,7 +255,6 @@ section {
 
   object-fit: cover;
   
-  /*border: 1px solid black;*/
   border-radius: 8px;
 }
 
@@ -295,8 +385,8 @@ footer .logo-footer {
 }
 
 .instagram-icon {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   margin-left: 32px;
   margin-top: auto;
   margin-bottom: auto;
