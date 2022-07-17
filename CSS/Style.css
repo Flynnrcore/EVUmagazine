@@ -21,10 +21,10 @@ header {
   width: 146px;
   height: 80px;
   
-  top: 0;
+  /*top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0;*/
   margin: auto;
   
   font-family: 'Julius Sans One';
@@ -38,10 +38,73 @@ header {
   color: #FFFFFF;
 }
 
-nav {
+.left-menu {
   display:flex;
   position: relative;
   order: 1;
+}
+
+.right-menu {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    width: 390px;
+    padding-right: 3%;
+
+    right: 0;
+    order: 3;
+   /* background-color: #FFC700;*/
+}
+
+
+.right-menu button {
+    border: none;
+    background: none;
+}
+
+.right-menu img:hover {
+    opacity: 0.70;
+    cursor: pointer;
+}
+
+.header-search {
+    width: 258px;
+    height: 40px;
+}
+
+
+.header-search input {
+    position: relative;
+    width: 206px;
+
+    background: rgba(243, 243, 243, 0.78);
+    border: 1px solid silver;
+    border-radius: 10px;
+
+}
+
+.header-search input:focus {
+    border: ;
+}
+
+.header-basket {
+    display: inline;
+
+    width: 32px;
+    height: 32px;
+
+}
+
+.header-user-cabinet {
+    width: 32px;
+    height: 32px;  
+}
+
+li {
+    display: inline-block;
+  /*  background-color: #ae63e4;*/
 }
 
 main {
@@ -98,6 +161,8 @@ section {
 .item-image {
   width: 318px;
   height: 242px;
+
+  object-fit: cover;
   
   /*border: 1px solid black;*/
   border-radius: 8px;
@@ -169,8 +234,10 @@ a:link {
   color: white;
 }
 
-button:hover {
-  transform: scale(1.05);
+
+main button:hover {
+  background: linear-gradient(93.62deg, rgba(85, 63, 220, 0.53) 60.04%, rgba(86, 62, 232, 0) 103.73%);
+  cursor: pointer;
 }
 
  aside {
@@ -210,12 +277,32 @@ form {
 
 footer {
   display: flex;
-  box-sizing: border-box;
+  position: relative;
   
   height: 80px;
-   
+
   left: 0;
   right: 0;
- 
+
+
   background: #3D3D3D;
+}
+
+footer .logo-footer {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 16px;
+}
+
+.instagram-icon {
+  width: 48px;
+  height: 48px;
+  margin-left: 32px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.instagram-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
